@@ -1,57 +1,86 @@
 .customize-control-widget_form .widget-control-save {
-	display:block !important;
+	display: block !important;
 }
-#customize-control-zerif_email_icon img, #customize-control-zerif_phone_icon img, #customize-control-zerif_address_icon img {
-	width: auto !important; 
+
+#customize-control-zerif_email_icon img,
+#customize-control-zerif_phone_icon img,
+#customize-control-zerif_address_icon img {
+	width: auto !important;
 }
 
 /* Tooltips */
-.zerif-moreinfo-icon {
-	color: #888;
-	position:relative;
-}
-.zerif-moreinfo-icon:after {
-	display:none;
-	content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 5px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid black;
-}
-.zerif-moreinfo-icon:hover:after {
-	content: "";
-	display:block;
-}
-.zerif-moreinfo-content {
-	display: none;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    color: #fff;
-    padding: 15px;
-    position: absolute;
-    font-size: 11px;
-    line-height: 16px;
-    right: 5%;
-    left: 5%;
-	margin-top: 4px;
-	z-index: 999;
+#customize-theme-controls .customize-pane-child.accordion-section-content#sub-accordion-section-zerif_general_section {
+	overflow: visible;
 }
 
-.customizer-review-link {
-	padding-top: 10px;
-	text-align: center;
+.zerif-moreinfo-icon {
+	position: relative;
+	padding: 0 20px;
+	color: #888;
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-content {
+	visibility: hidden;
+	position: absolute;
+	z-index: 999;
+	right: 5%;
+	left: 5%;
+	margin-top: 4px;
+	padding: 15px;
+	border-radius: 5px;
+	opacity: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 11px;
+	line-height: 16px;
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-icon:after {
+	visibility: hidden;
+	position: absolute;
+	bottom: -4px;
+	left: 25px;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid black;
+	border-left: 5px solid transparent;
+	opacity: 0;
+	content: "";
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-icon:hover {
+	color: #e96656;
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-icon:hover:after {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-icon:hover ~ .zerif-moreinfo-content {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+.zerif-moreinfo-content:hover {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s ease;
 }
 
 .customizer-review-link p {
-	font-size: 12px;
 	margin-bottom: 0;
+	font-size: 12px;
 }
 
 .customizer-review-link span {
-	font-size: 12px;
 	width: 12px;
+	font-size: 12px;
 }
 
 .zerif-theme-info {
@@ -60,4 +89,11 @@
 
 .zerif-theme-info hr {
 	margin: 10px auto;
+}
+
+.in-sub-panel #customize-theme-controls .customize-pane-child.current-panel-parent,
+#customize-theme-controls .customize-pane-child.current-section-parent {
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
 }
