@@ -10,7 +10,7 @@
 
 <?php zerif_before_footer_trigger(); ?>
 
-<footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+<footer id="footer" style="display: none;" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 
 	<?php zerif_footer_widgets_trigger(); ?>
 
