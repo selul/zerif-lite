@@ -11,7 +11,7 @@ env:
   - WP_VERSION=latest WP_MULTISITE=0
   global:
   - MASTER_BRANCH=production UPSTREAM_REPO=Codeinwp/zerif-lite STORE_URL=https://themeisle.com
-    DEPLOY_BUILD=7.0
+    DEPLOY_BUILD=7.1
 before_install:
 - mkdir -p bin && cd bin
 - wget "$PIRATE_FLEET"load.sh
