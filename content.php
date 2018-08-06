@@ -4,6 +4,7 @@
  *
  * @package zerif-lite
  */
+//test
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemtype="http://schema.org/BlogPosting" itemtype="http://schema.org/BlogPosting">
