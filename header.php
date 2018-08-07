@@ -58,7 +58,7 @@ if ( is_front_page() && ! is_customize_preview() ) :
 	<div class="mobile-bg-fix-whole-site">
 
 
-<header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" style="background:#000">
+<header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" style="visibility: none">
 
 	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
 
