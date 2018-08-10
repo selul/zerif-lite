@@ -2,7 +2,7 @@
 
 	<header class="entry-header">
 
-		<h1 class="sadasdasd-title"><?php the_title(); ?></h1>
+		<h1 class="sadasdasdsadas-title"><?php the_title(); ?></h1>
 
 	</header><!-- .entry-header -->
 
