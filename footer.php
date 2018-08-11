@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the footer.
- * Contains the closing of the #content div and all content after
+ * Contains thhhhhe closing of the #content div and all content after
  */
 
 ?>
